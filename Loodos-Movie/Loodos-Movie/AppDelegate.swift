@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  Loodos Movie
+//  Loodos-Movie
 //
 //  Created by Cemal Tuysuz on 19.06.2023.
 //

@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  Loodos Movie
+//  Loodos-Movie
 //
 //  Created by Cemal Tuysuz on 19.06.2023.
 //
@@ -11,9 +11,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        view.backgroundColor = .red
     }
-
-
 }
 
