@@ -25,6 +25,9 @@
 		1592AC122A408D88006E78A2 /* FontType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1592AC112A408D88006E78A2 /* FontType.swift */; };
 		1592AC152A408EAD006E78A2 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1592AC142A408EAD006E78A2 /* UIColor+Extension.swift */; };
 		1592AC172A408ED0006E78A2 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1592AC162A408ED0006E78A2 /* Color.swift */; };
+		1592AC1B2A408FAD006E78A2 /* Localizable(en).strings in Resources */ = {isa = PBXBuildFile; fileRef = 1592AC1D2A408FAD006E78A2 /* Localizable(en).strings */; };
+		1592AC202A408FBE006E78A2 /* Localizable(tr).strings in Resources */ = {isa = PBXBuildFile; fileRef = 1592AC222A408FBE006E78A2 /* Localizable(tr).strings */; };
+		1592AC272A409044006E78A2 /* String+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1592AC262A409044006E78A2 /* String+Localization.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +45,9 @@
 		1592AC112A408D88006E78A2 /* FontType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontType.swift; sourceTree = "<group>"; };
 		1592AC142A408EAD006E78A2 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		1592AC162A408ED0006E78A2 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		1592AC1C2A408FAD006E78A2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = "en.lproj/Localizable(en).strings"; sourceTree = "<group>"; };
+		1592AC212A408FBE006E78A2 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = "tr.lproj/Localizable(tr).strings"; sourceTree = "<group>"; };
+		1592AC262A409044006E78A2 /* String+Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localization.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				1592AC052A408CE7006E78A2 /* GoogleService-Info.plist */,
+				1592AC182A408F12006E78A2 /* Localization */,
 				1592ABED2A408720006E78A2 /* Core */,
 				1592ABEC2A408717006E78A2 /* App */,
 				1592ABEB2A408709006E78A2 /* Assets */,
@@ -112,6 +119,7 @@
 		1592ABED2A408720006E78A2 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				1592AC252A409036006E78A2 /* Extensions */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -169,6 +177,23 @@
 			path = Color;
 			sourceTree = "<group>";
 		};
+		1592AC182A408F12006E78A2 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				1592AC1D2A408FAD006E78A2 /* Localizable(en).strings */,
+				1592AC222A408FBE006E78A2 /* Localizable(tr).strings */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+		1592AC252A409036006E78A2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1592AC262A409044006E78A2 /* String+Localization.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -219,6 +244,7 @@
 			knownRegions = (
 				en,
 				Base,
+				tr,
 			);
 			mainGroup = 1592ABCB2A408569006E78A2;
 			packageReferences = (
@@ -242,7 +268,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				1592ABE12A40856B006E78A2 /* Assets.xcassets in Resources */,
+				1592AC1B2A408FAD006E78A2 /* Localizable(en).strings in Resources */,
 				1592AC0E2A408D45006E78A2 /* Cabin-SemiBold.ttf in Resources */,
+				1592AC202A408FBE006E78A2 /* Localizable(tr).strings in Resources */,
 				1592AC0A2A408D2F006E78A2 /* Cabin-Bold.ttf in Resources */,
 				1592AC062A408CE8006E78A2 /* GoogleService-Info.plist in Resources */,
 				1592AC0C2A408D3C006E78A2 /* Cabin-Medium.ttf in Resources */,
@@ -258,6 +286,7 @@
 			files = (
 				1592AC102A408D61006E78A2 /* Font.swift in Sources */,
 				1592ABF12A40873A006E78A2 /* SplashVC.swift in Sources */,
+				1592AC272A409044006E78A2 /* String+Localization.swift in Sources */,
 				1592AC172A408ED0006E78A2 /* Color.swift in Sources */,
 				1592ABD82A408569006E78A2 /* AppDelegate.swift in Sources */,
 				1592AC122A408D88006E78A2 /* FontType.swift in Sources */,
@@ -267,6 +296,25 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1592AC1D2A408FAD006E78A2 /* Localizable(en).strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1592AC1C2A408FAD006E78A2 /* en */,
+			);
+			name = "Localizable(en).strings";
+			sourceTree = "<group>";
+		};
+		1592AC222A408FBE006E78A2 /* Localizable(tr).strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1592AC212A408FBE006E78A2 /* tr */,
+			);
+			name = "Localizable(tr).strings";
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		1592ABE62A40856B006E78A2 /* Debug */ = {
