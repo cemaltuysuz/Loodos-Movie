@@ -23,6 +23,8 @@
 		1592AC0E2A408D45006E78A2 /* Cabin-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1592AC0D2A408D45006E78A2 /* Cabin-SemiBold.ttf */; };
 		1592AC102A408D61006E78A2 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1592AC0F2A408D61006E78A2 /* Font.swift */; };
 		1592AC122A408D88006E78A2 /* FontType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1592AC112A408D88006E78A2 /* FontType.swift */; };
+		1592AC152A408EAD006E78A2 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1592AC142A408EAD006E78A2 /* UIColor+Extension.swift */; };
+		1592AC172A408ED0006E78A2 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1592AC162A408ED0006E78A2 /* Color.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		1592AC0D2A408D45006E78A2 /* Cabin-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cabin-SemiBold.ttf"; sourceTree = "<group>"; };
 		1592AC0F2A408D61006E78A2 /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
 		1592AC112A408D88006E78A2 /* FontType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontType.swift; sourceTree = "<group>"; };
+		1592AC142A408EAD006E78A2 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		1592AC162A408ED0006E78A2 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +93,7 @@
 		1592ABEB2A408709006E78A2 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				1592AC132A408EA2006E78A2 /* Color */,
 				1592AC022A408C97006E78A2 /* Font */,
 				1592ABE02A40856B006E78A2 /* Assets.xcassets */,
 			);
@@ -153,6 +158,15 @@
 				1592AC092A408D2F006E78A2 /* Cabin-Bold.ttf */,
 			);
 			path = Cabin;
+			sourceTree = "<group>";
+		};
+		1592AC132A408EA2006E78A2 /* Color */ = {
+			isa = PBXGroup;
+			children = (
+				1592AC142A408EAD006E78A2 /* UIColor+Extension.swift */,
+				1592AC162A408ED0006E78A2 /* Color.swift */,
+			);
+			path = Color;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -244,9 +258,11 @@
 			files = (
 				1592AC102A408D61006E78A2 /* Font.swift in Sources */,
 				1592ABF12A40873A006E78A2 /* SplashVC.swift in Sources */,
+				1592AC172A408ED0006E78A2 /* Color.swift in Sources */,
 				1592ABD82A408569006E78A2 /* AppDelegate.swift in Sources */,
 				1592AC122A408D88006E78A2 /* FontType.swift in Sources */,
 				1592ABDA2A408569006E78A2 /* SceneDelegate.swift in Sources */,
+				1592AC152A408EAD006E78A2 /* UIColor+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
