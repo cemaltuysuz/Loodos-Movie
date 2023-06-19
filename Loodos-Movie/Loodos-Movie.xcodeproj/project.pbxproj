@@ -9,19 +9,23 @@
 /* Begin PBXBuildFile section */
 		1592ABD82A408569006E78A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1592ABD72A408569006E78A2 /* AppDelegate.swift */; };
 		1592ABDA2A408569006E78A2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1592ABD92A408569006E78A2 /* SceneDelegate.swift */; };
-		1592ABDC2A408569006E78A2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1592ABDB2A408569006E78A2 /* ViewController.swift */; };
 		1592ABE12A40856B006E78A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1592ABE02A40856B006E78A2 /* Assets.xcassets */; };
-		1592ABE42A40856B006E78A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1592ABE22A40856B006E78A2 /* LaunchScreen.storyboard */; };
+		1592ABF12A40873A006E78A2 /* SplashVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1592ABF02A40873A006E78A2 /* SplashVC.swift */; };
+		1592ABF42A408792006E78A2 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 1592ABF32A408792006E78A2 /* SnapKit */; };
+		1592ABF72A4087A1006E78A2 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 1592ABF62A4087A1006E78A2 /* Kingfisher */; };
+		1592ABFA2A4087CA006E78A2 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 1592ABF92A4087CA006E78A2 /* Lottie */; };
+		1592ABFD2A4088F1006E78A2 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 1592ABFC2A4088F1006E78A2 /* FirebaseAnalytics */; };
+		1592ABFF2A4088F1006E78A2 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 1592ABFE2A4088F1006E78A2 /* FirebaseMessaging */; };
+		1592AC012A4088F1006E78A2 /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = 1592AC002A4088F1006E78A2 /* FirebaseRemoteConfig */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1592ABD42A408569006E78A2 /* Loodos-Movie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Loodos-Movie.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1592ABD72A408569006E78A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1592ABD92A408569006E78A2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1592ABDB2A408569006E78A2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1592ABE02A40856B006E78A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		1592ABE32A40856B006E78A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1592ABE52A40856B006E78A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1592ABF02A40873A006E78A2 /* SplashVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1592ABF72A4087A1006E78A2 /* Kingfisher in Frameworks */,
+				1592ABF42A408792006E78A2 /* SnapKit in Frameworks */,
+				1592ABFF2A4088F1006E78A2 /* FirebaseMessaging in Frameworks */,
+				1592AC012A4088F1006E78A2 /* FirebaseRemoteConfig in Frameworks */,
+				1592ABFD2A4088F1006E78A2 /* FirebaseAnalytics in Frameworks */,
+				1592ABFA2A4087CA006E78A2 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,14 +64,53 @@
 		1592ABD62A408569006E78A2 /* Loodos-Movie */ = {
 			isa = PBXGroup;
 			children = (
-				1592ABD72A408569006E78A2 /* AppDelegate.swift */,
-				1592ABD92A408569006E78A2 /* SceneDelegate.swift */,
-				1592ABDB2A408569006E78A2 /* ViewController.swift */,
-				1592ABE02A40856B006E78A2 /* Assets.xcassets */,
-				1592ABE22A40856B006E78A2 /* LaunchScreen.storyboard */,
+				1592ABED2A408720006E78A2 /* Core */,
+				1592ABEC2A408717006E78A2 /* App */,
+				1592ABEB2A408709006E78A2 /* Assets */,
+				1592ABEE2A408727006E78A2 /* Flows */,
 				1592ABE52A40856B006E78A2 /* Info.plist */,
 			);
 			path = "Loodos-Movie";
+			sourceTree = "<group>";
+		};
+		1592ABEB2A408709006E78A2 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				1592ABE02A40856B006E78A2 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		1592ABEC2A408717006E78A2 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				1592ABD72A408569006E78A2 /* AppDelegate.swift */,
+				1592ABD92A408569006E78A2 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		1592ABED2A408720006E78A2 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		1592ABEE2A408727006E78A2 /* Flows */ = {
+			isa = PBXGroup;
+			children = (
+				1592ABEF2A40872E006E78A2 /* Splash */,
+			);
+			path = Flows;
+			sourceTree = "<group>";
+		};
+		1592ABEF2A40872E006E78A2 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				1592ABF02A40873A006E78A2 /* SplashVC.swift */,
+			);
+			path = Splash;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -80,6 +129,14 @@
 			dependencies = (
 			);
 			name = "Loodos-Movie";
+			packageProductDependencies = (
+				1592ABF32A408792006E78A2 /* SnapKit */,
+				1592ABF62A4087A1006E78A2 /* Kingfisher */,
+				1592ABF92A4087CA006E78A2 /* Lottie */,
+				1592ABFC2A4088F1006E78A2 /* FirebaseAnalytics */,
+				1592ABFE2A4088F1006E78A2 /* FirebaseMessaging */,
+				1592AC002A4088F1006E78A2 /* FirebaseRemoteConfig */,
+			);
 			productName = "Loodos-Movie";
 			productReference = 1592ABD42A408569006E78A2 /* Loodos-Movie.app */;
 			productType = "com.apple.product-type.application";
@@ -108,6 +165,12 @@
 				Base,
 			);
 			mainGroup = 1592ABCB2A408569006E78A2;
+			packageReferences = (
+				1592ABF22A408792006E78A2 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				1592ABF52A4087A1006E78A2 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				1592ABF82A4087CA006E78A2 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+				1592ABFB2A4088F1006E78A2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 1592ABD52A408569006E78A2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -122,7 +185,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1592ABE42A40856B006E78A2 /* LaunchScreen.storyboard in Resources */,
 				1592ABE12A40856B006E78A2 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -134,24 +196,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1592ABDC2A408569006E78A2 /* ViewController.swift in Sources */,
+				1592ABF12A40873A006E78A2 /* SplashVC.swift in Sources */,
 				1592ABD82A408569006E78A2 /* AppDelegate.swift in Sources */,
 				1592ABDA2A408569006E78A2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		1592ABE22A40856B006E78A2 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1592ABE32A40856B006E78A2 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		1592ABE62A40856B006E78A2 /* Debug */ = {
@@ -344,6 +395,74 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1592ABF22A408792006E78A2 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		1592ABF52A4087A1006E78A2 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+		1592ABF82A4087CA006E78A2 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+		1592ABFB2A4088F1006E78A2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1592ABF32A408792006E78A2 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1592ABF22A408792006E78A2 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		1592ABF62A4087A1006E78A2 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1592ABF52A4087A1006E78A2 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		1592ABF92A4087CA006E78A2 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1592ABF82A4087CA006E78A2 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+		1592ABFC2A4088F1006E78A2 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1592ABFB2A4088F1006E78A2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		1592ABFE2A4088F1006E78A2 /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1592ABFB2A4088F1006E78A2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+		1592AC002A4088F1006E78A2 /* FirebaseRemoteConfig */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1592ABFB2A4088F1006E78A2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseRemoteConfig;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1592ABCC2A408569006E78A2 /* Project object */;
 }
