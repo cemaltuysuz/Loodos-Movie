@@ -18,7 +18,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let windowScene = (scene as? UIWindowScene) else { return }
         let window = UIWindow(windowScene: windowScene)
-        window.rootViewController = SplashVC()
+        let vm = SplashVM()
+        window.rootViewController = SplashVC(viewModel: vm)
         window.makeKeyAndVisible()
         self.window = window
     }

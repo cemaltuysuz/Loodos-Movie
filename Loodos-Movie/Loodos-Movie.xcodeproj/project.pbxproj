@@ -11,12 +11,6 @@
 		1592ABDA2A408569006E78A2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1592ABD92A408569006E78A2 /* SceneDelegate.swift */; };
 		1592ABE12A40856B006E78A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1592ABE02A40856B006E78A2 /* Assets.xcassets */; };
 		1592ABF12A40873A006E78A2 /* SplashVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1592ABF02A40873A006E78A2 /* SplashVC.swift */; };
-		1592ABF42A408792006E78A2 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 1592ABF32A408792006E78A2 /* SnapKit */; };
-		1592ABF72A4087A1006E78A2 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 1592ABF62A4087A1006E78A2 /* Kingfisher */; };
-		1592ABFA2A4087CA006E78A2 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 1592ABF92A4087CA006E78A2 /* Lottie */; };
-		1592ABFD2A4088F1006E78A2 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 1592ABFC2A4088F1006E78A2 /* FirebaseAnalytics */; };
-		1592ABFF2A4088F1006E78A2 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 1592ABFE2A4088F1006E78A2 /* FirebaseMessaging */; };
-		1592AC012A4088F1006E78A2 /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = 1592AC002A4088F1006E78A2 /* FirebaseRemoteConfig */; };
 		1592AC062A408CE8006E78A2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1592AC052A408CE7006E78A2 /* GoogleService-Info.plist */; };
 		1592AC0A2A408D2F006E78A2 /* Cabin-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1592AC092A408D2F006E78A2 /* Cabin-Bold.ttf */; };
 		1592AC0C2A408D3C006E78A2 /* Cabin-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1592AC0B2A408D3B006E78A2 /* Cabin-Medium.ttf */; };
@@ -28,6 +22,22 @@
 		1592AC1B2A408FAD006E78A2 /* Localizable(en).strings in Resources */ = {isa = PBXBuildFile; fileRef = 1592AC1D2A408FAD006E78A2 /* Localizable(en).strings */; };
 		1592AC202A408FBE006E78A2 /* Localizable(tr).strings in Resources */ = {isa = PBXBuildFile; fileRef = 1592AC222A408FBE006E78A2 /* Localizable(tr).strings */; };
 		1592AC272A409044006E78A2 /* String+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1592AC262A409044006E78A2 /* String+Localization.swift */; };
+		1592AC2A2A40938D006E78A2 /* ThreeBallLoading.json in Resources */ = {isa = PBXBuildFile; fileRef = 1592AC292A40938C006E78A2 /* ThreeBallLoading.json */; };
+		1592AC352A40A2F6006E78A2 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1592AC342A40A2F6006E78A2 /* BaseViewController.swift */; };
+		1592AC372A40A300006E78A2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1592AC362A40A300006E78A2 /* ViewController.swift */; };
+		1592AC3B2A40A336006E78A2 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1592AC3A2A40A336006E78A2 /* ViewModel.swift */; };
+		1592AC3F2A40A36D006E78A2 /* SplashVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1592AC3E2A40A36D006E78A2 /* SplashVM.swift */; };
+		1592AC462A40AC33006E78A2 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1592AC452A40AC33006E78A2 /* UIView+Extension.swift */; };
+		1592AC482A40B8BA006E78A2 /* SplashVCState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1592AC472A40B8BA006E78A2 /* SplashVCState.swift */; };
+		1592AC5C2A40F16A006E78A2 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 1592AC5B2A40F16A006E78A2 /* Lottie */; };
+		1592AC5F2A40F1C1006E78A2 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 1592AC5E2A40F1C1006E78A2 /* SnapKit */; };
+		1592AC622A41B073006E78A2 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 1592AC612A41B073006E78A2 /* Kingfisher */; };
+		1592AC652A41B1BD006E78A2 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 1592AC642A41B1BD006E78A2 /* FirebaseAnalytics */; };
+		1592AC672A41B1BD006E78A2 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 1592AC662A41B1BD006E78A2 /* FirebaseMessaging */; };
+		1592AC692A41B1BD006E78A2 /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = 1592AC682A41B1BD006E78A2 /* FirebaseRemoteConfig */; };
+		1592AC6C2A430DB6006E78A2 /* RCValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1592AC6B2A430DB6006E78A2 /* RCValues.swift */; };
+		1592AC6F2A430F9B006E78A2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1592AC6E2A430F9B006E78A2 /* Constants.swift */; };
+		1592AC712A430FB3006E78A2 /* Constants+RCValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1592AC702A430FB3006E78A2 /* Constants+RCValues.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +58,16 @@
 		1592AC1C2A408FAD006E78A2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = "en.lproj/Localizable(en).strings"; sourceTree = "<group>"; };
 		1592AC212A408FBE006E78A2 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = "tr.lproj/Localizable(tr).strings"; sourceTree = "<group>"; };
 		1592AC262A409044006E78A2 /* String+Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localization.swift"; sourceTree = "<group>"; };
+		1592AC292A40938C006E78A2 /* ThreeBallLoading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ThreeBallLoading.json; sourceTree = "<group>"; };
+		1592AC342A40A2F6006E78A2 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		1592AC362A40A300006E78A2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1592AC3A2A40A336006E78A2 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		1592AC3E2A40A36D006E78A2 /* SplashVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashVM.swift; sourceTree = "<group>"; };
+		1592AC452A40AC33006E78A2 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		1592AC472A40B8BA006E78A2 /* SplashVCState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashVCState.swift; sourceTree = "<group>"; };
+		1592AC6B2A430DB6006E78A2 /* RCValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RCValues.swift; sourceTree = "<group>"; };
+		1592AC6E2A430F9B006E78A2 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		1592AC702A430FB3006E78A2 /* Constants+RCValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Constants+RCValues.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,12 +75,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1592ABF72A4087A1006E78A2 /* Kingfisher in Frameworks */,
-				1592ABF42A408792006E78A2 /* SnapKit in Frameworks */,
-				1592ABFF2A4088F1006E78A2 /* FirebaseMessaging in Frameworks */,
-				1592AC012A4088F1006E78A2 /* FirebaseRemoteConfig in Frameworks */,
-				1592ABFD2A4088F1006E78A2 /* FirebaseAnalytics in Frameworks */,
-				1592ABFA2A4087CA006E78A2 /* Lottie in Frameworks */,
+				1592AC622A41B073006E78A2 /* Kingfisher in Frameworks */,
+				1592AC5C2A40F16A006E78A2 /* Lottie in Frameworks */,
+				1592AC672A41B1BD006E78A2 /* FirebaseMessaging in Frameworks */,
+				1592AC692A41B1BD006E78A2 /* FirebaseRemoteConfig in Frameworks */,
+				1592AC652A41B1BD006E78A2 /* FirebaseAnalytics in Frameworks */,
+				1592AC5F2A40F1C1006E78A2 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,6 +120,7 @@
 		1592ABEB2A408709006E78A2 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				1592AC282A409367006E78A2 /* Lottie */,
 				1592AC132A408EA2006E78A2 /* Color */,
 				1592AC022A408C97006E78A2 /* Font */,
 				1592ABE02A40856B006E78A2 /* Assets.xcassets */,
@@ -119,6 +140,9 @@
 		1592ABED2A408720006E78A2 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				1592AC6D2A430F8F006E78A2 /* Consants */,
+				1592AC6A2A430DA9006E78A2 /* Utility */,
+				1592AC332A40A2E8006E78A2 /* Arch */,
 				1592AC252A409036006E78A2 /* Extensions */,
 			);
 			path = Core;
@@ -135,7 +159,8 @@
 		1592ABEF2A40872E006E78A2 /* Splash */ = {
 			isa = PBXGroup;
 			children = (
-				1592ABF02A40873A006E78A2 /* SplashVC.swift */,
+				1592AC3D2A40A360006E78A2 /* ViewModel */,
+				1592AC3C2A40A353006E78A2 /* ViewController */,
 			);
 			path = Splash;
 			sourceTree = "<group>";
@@ -190,8 +215,77 @@
 			isa = PBXGroup;
 			children = (
 				1592AC262A409044006E78A2 /* String+Localization.swift */,
+				1592AC452A40AC33006E78A2 /* UIView+Extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		1592AC282A409367006E78A2 /* Lottie */ = {
+			isa = PBXGroup;
+			children = (
+				1592AC292A40938C006E78A2 /* ThreeBallLoading.json */,
+			);
+			path = Lottie;
+			sourceTree = "<group>";
+		};
+		1592AC332A40A2E8006E78A2 /* Arch */ = {
+			isa = PBXGroup;
+			children = (
+				1592AC392A40A328006E78A2 /* ViewModel */,
+				1592AC382A40A31F006E78A2 /* ViewController */,
+			);
+			path = Arch;
+			sourceTree = "<group>";
+		};
+		1592AC382A40A31F006E78A2 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1592AC342A40A2F6006E78A2 /* BaseViewController.swift */,
+				1592AC362A40A300006E78A2 /* ViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		1592AC392A40A328006E78A2 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1592AC3A2A40A336006E78A2 /* ViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1592AC3C2A40A353006E78A2 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1592ABF02A40873A006E78A2 /* SplashVC.swift */,
+				1592AC472A40B8BA006E78A2 /* SplashVCState.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		1592AC3D2A40A360006E78A2 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1592AC3E2A40A36D006E78A2 /* SplashVM.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1592AC6A2A430DA9006E78A2 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				1592AC6B2A430DB6006E78A2 /* RCValues.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		1592AC6D2A430F8F006E78A2 /* Consants */ = {
+			isa = PBXGroup;
+			children = (
+				1592AC6E2A430F9B006E78A2 /* Constants.swift */,
+				1592AC702A430FB3006E78A2 /* Constants+RCValues.swift */,
+			);
+			path = Consants;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,12 +305,12 @@
 			);
 			name = "Loodos-Movie";
 			packageProductDependencies = (
-				1592ABF32A408792006E78A2 /* SnapKit */,
-				1592ABF62A4087A1006E78A2 /* Kingfisher */,
-				1592ABF92A4087CA006E78A2 /* Lottie */,
-				1592ABFC2A4088F1006E78A2 /* FirebaseAnalytics */,
-				1592ABFE2A4088F1006E78A2 /* FirebaseMessaging */,
-				1592AC002A4088F1006E78A2 /* FirebaseRemoteConfig */,
+				1592AC5B2A40F16A006E78A2 /* Lottie */,
+				1592AC5E2A40F1C1006E78A2 /* SnapKit */,
+				1592AC612A41B073006E78A2 /* Kingfisher */,
+				1592AC642A41B1BD006E78A2 /* FirebaseAnalytics */,
+				1592AC662A41B1BD006E78A2 /* FirebaseMessaging */,
+				1592AC682A41B1BD006E78A2 /* FirebaseRemoteConfig */,
 			);
 			productName = "Loodos-Movie";
 			productReference = 1592ABD42A408569006E78A2 /* Loodos-Movie.app */;
@@ -248,10 +342,10 @@
 			);
 			mainGroup = 1592ABCB2A408569006E78A2;
 			packageReferences = (
-				1592ABF22A408792006E78A2 /* XCRemoteSwiftPackageReference "SnapKit" */,
-				1592ABF52A4087A1006E78A2 /* XCRemoteSwiftPackageReference "Kingfisher" */,
-				1592ABF82A4087CA006E78A2 /* XCRemoteSwiftPackageReference "lottie-ios" */,
-				1592ABFB2A4088F1006E78A2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				1592AC5A2A40F16A006E78A2 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+				1592AC5D2A40F1C1006E78A2 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				1592AC602A41B073006E78A2 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				1592AC632A41B1BD006E78A2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = 1592ABD52A408569006E78A2 /* Products */;
 			projectDirPath = "";
@@ -273,6 +367,7 @@
 				1592AC202A408FBE006E78A2 /* Localizable(tr).strings in Resources */,
 				1592AC0A2A408D2F006E78A2 /* Cabin-Bold.ttf in Resources */,
 				1592AC062A408CE8006E78A2 /* GoogleService-Info.plist in Resources */,
+				1592AC2A2A40938D006E78A2 /* ThreeBallLoading.json in Resources */,
 				1592AC0C2A408D3C006E78A2 /* Cabin-Medium.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,14 +379,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1592AC372A40A300006E78A2 /* ViewController.swift in Sources */,
+				1592AC462A40AC33006E78A2 /* UIView+Extension.swift in Sources */,
 				1592AC102A408D61006E78A2 /* Font.swift in Sources */,
 				1592ABF12A40873A006E78A2 /* SplashVC.swift in Sources */,
+				1592AC3B2A40A336006E78A2 /* ViewModel.swift in Sources */,
 				1592AC272A409044006E78A2 /* String+Localization.swift in Sources */,
 				1592AC172A408ED0006E78A2 /* Color.swift in Sources */,
+				1592AC712A430FB3006E78A2 /* Constants+RCValues.swift in Sources */,
+				1592AC6F2A430F9B006E78A2 /* Constants.swift in Sources */,
 				1592ABD82A408569006E78A2 /* AppDelegate.swift in Sources */,
+				1592AC352A40A2F6006E78A2 /* BaseViewController.swift in Sources */,
 				1592AC122A408D88006E78A2 /* FontType.swift in Sources */,
 				1592ABDA2A408569006E78A2 /* SceneDelegate.swift in Sources */,
+				1592AC6C2A430DB6006E78A2 /* RCValues.swift in Sources */,
 				1592AC152A408EAD006E78A2 /* UIColor+Extension.swift in Sources */,
+				1592AC3F2A40A36D006E78A2 /* SplashVM.swift in Sources */,
+				1592AC482A40B8BA006E78A2 /* SplashVCState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -509,7 +613,15 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		1592ABF22A408792006E78A2 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+		1592AC5A2A40F16A006E78A2 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 4.2.0;
+			};
+		};
+		1592AC5D2A40F1C1006E78A2 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
 			requirement = {
@@ -517,23 +629,15 @@
 				minimumVersion = 5.0.0;
 			};
 		};
-		1592ABF52A4087A1006E78A2 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+		1592AC602A41B073006E78A2 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 7.0.0;
+				kind = exactVersion;
+				version = 7.0.0;
 			};
 		};
-		1592ABF82A4087CA006E78A2 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 4.0.0;
-			};
-		};
-		1592ABFB2A4088F1006E78A2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+		1592AC632A41B1BD006E78A2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
 			requirement = {
@@ -544,34 +648,34 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		1592ABF32A408792006E78A2 /* SnapKit */ = {
+		1592AC5B2A40F16A006E78A2 /* Lottie */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 1592ABF22A408792006E78A2 /* XCRemoteSwiftPackageReference "SnapKit" */;
-			productName = SnapKit;
-		};
-		1592ABF62A4087A1006E78A2 /* Kingfisher */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 1592ABF52A4087A1006E78A2 /* XCRemoteSwiftPackageReference "Kingfisher" */;
-			productName = Kingfisher;
-		};
-		1592ABF92A4087CA006E78A2 /* Lottie */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 1592ABF82A4087CA006E78A2 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			package = 1592AC5A2A40F16A006E78A2 /* XCRemoteSwiftPackageReference "lottie-ios" */;
 			productName = Lottie;
 		};
-		1592ABFC2A4088F1006E78A2 /* FirebaseAnalytics */ = {
+		1592AC5E2A40F1C1006E78A2 /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 1592ABFB2A4088F1006E78A2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			package = 1592AC5D2A40F1C1006E78A2 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		1592AC612A41B073006E78A2 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1592AC602A41B073006E78A2 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		1592AC642A41B1BD006E78A2 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1592AC632A41B1BD006E78A2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseAnalytics;
 		};
-		1592ABFE2A4088F1006E78A2 /* FirebaseMessaging */ = {
+		1592AC662A41B1BD006E78A2 /* FirebaseMessaging */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 1592ABFB2A4088F1006E78A2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			package = 1592AC632A41B1BD006E78A2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseMessaging;
 		};
-		1592AC002A4088F1006E78A2 /* FirebaseRemoteConfig */ = {
+		1592AC682A41B1BD006E78A2 /* FirebaseRemoteConfig */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 1592ABFB2A4088F1006E78A2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			package = 1592AC632A41B1BD006E78A2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseRemoteConfig;
 		};
 /* End XCSwiftPackageProductDependency section */
