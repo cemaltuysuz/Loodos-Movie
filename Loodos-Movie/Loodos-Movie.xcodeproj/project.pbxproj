@@ -38,6 +38,17 @@
 		1592AC6C2A430DB6006E78A2 /* RCValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1592AC6B2A430DB6006E78A2 /* RCValues.swift */; };
 		1592AC6F2A430F9B006E78A2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1592AC6E2A430F9B006E78A2 /* Constants.swift */; };
 		1592AC712A430FB3006E78A2 /* Constants+RCValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1592AC702A430FB3006E78A2 /* Constants+RCValues.swift */; };
+		1592AC7E2A431327006E78A2 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1592AC7D2A431327006E78A2 /* NetworkError.swift */; };
+		1592AC802A43132D006E78A2 /* NetworkErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1592AC7F2A43132D006E78A2 /* NetworkErrorModel.swift */; };
+		1592AC832A4313CD006E78A2 /* OopsConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1592AC822A4313CD006E78A2 /* OopsConfig.swift */; };
+		1592AC852A431447006E78A2 /* NetworkHttpType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1592AC842A431447006E78A2 /* NetworkHttpType.swift */; };
+		1592AC872A43145F006E78A2 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1592AC862A43145F006E78A2 /* NetworkRequest.swift */; };
+		1592AC892A4314B0006E78A2 /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1592AC882A4314B0006E78A2 /* NetworkResult.swift */; };
+		1592AC8C2A43150A006E78A2 /* NetworkServiceConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1592AC8B2A43150A006E78A2 /* NetworkServiceConfig.swift */; };
+		1592AC8E2A431579006E78A2 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1592AC8D2A431579006E78A2 /* NetworkService.swift */; };
+		1592AC902A4315BF006E78A2 /* NetworkService+Movies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1592AC8F2A4315BF006E78A2 /* NetworkService+Movies.swift */; };
+		1592AC932A4337BD006E78A2 /* NetworkManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1592AC922A4337BD006E78A2 /* NetworkManagerProtocol.swift */; };
+		1592AC952A4337C5006E78A2 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1592AC942A4337C4006E78A2 /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +79,17 @@
 		1592AC6B2A430DB6006E78A2 /* RCValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RCValues.swift; sourceTree = "<group>"; };
 		1592AC6E2A430F9B006E78A2 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		1592AC702A430FB3006E78A2 /* Constants+RCValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Constants+RCValues.swift"; sourceTree = "<group>"; };
+		1592AC7D2A431327006E78A2 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		1592AC7F2A43132D006E78A2 /* NetworkErrorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkErrorModel.swift; sourceTree = "<group>"; };
+		1592AC822A4313CD006E78A2 /* OopsConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OopsConfig.swift; sourceTree = "<group>"; };
+		1592AC842A431447006E78A2 /* NetworkHttpType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHttpType.swift; sourceTree = "<group>"; };
+		1592AC862A43145F006E78A2 /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
+		1592AC882A4314B0006E78A2 /* NetworkResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
+		1592AC8B2A43150A006E78A2 /* NetworkServiceConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceConfig.swift; sourceTree = "<group>"; };
+		1592AC8D2A431579006E78A2 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		1592AC8F2A4315BF006E78A2 /* NetworkService+Movies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NetworkService+Movies.swift"; sourceTree = "<group>"; };
+		1592AC922A4337BD006E78A2 /* NetworkManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerProtocol.swift; sourceTree = "<group>"; };
+		1592AC942A4337C4006E78A2 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,7 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				1592AC052A408CE7006E78A2 /* GoogleService-Info.plist */,
-				1592AC182A408F12006E78A2 /* Localization */,
+				1592AC722A431253006E78A2 /* Network */,
 				1592ABED2A408720006E78A2 /* Core */,
 				1592ABEC2A408717006E78A2 /* App */,
 				1592ABEB2A408709006E78A2 /* Assets */,
@@ -140,6 +162,7 @@
 		1592ABED2A408720006E78A2 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				1592AC182A408F12006E78A2 /* Localization */,
 				1592AC6D2A430F8F006E78A2 /* Consants */,
 				1592AC6A2A430DA9006E78A2 /* Utility */,
 				1592AC332A40A2E8006E78A2 /* Arch */,
@@ -275,6 +298,7 @@
 			isa = PBXGroup;
 			children = (
 				1592AC6B2A430DB6006E78A2 /* RCValues.swift */,
+				1592AC822A4313CD006E78A2 /* OopsConfig.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -286,6 +310,63 @@
 				1592AC702A430FB3006E78A2 /* Constants+RCValues.swift */,
 			);
 			path = Consants;
+			sourceTree = "<group>";
+		};
+		1592AC722A431253006E78A2 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				1592AC7B2A4312C4006E78A2 /* Service */,
+				1592AC7A2A4312BC006E78A2 /* NetworkManager */,
+				1592AC792A4312B1006E78A2 /* Basics */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		1592AC792A4312B1006E78A2 /* Basics */ = {
+			isa = PBXGroup;
+			children = (
+				1592AC8A2A4314EB006E78A2 /* Service */,
+				1592AC7C2A43130A006E78A2 /* Error */,
+				1592AC842A431447006E78A2 /* NetworkHttpType.swift */,
+				1592AC862A43145F006E78A2 /* NetworkRequest.swift */,
+			);
+			path = Basics;
+			sourceTree = "<group>";
+		};
+		1592AC7A2A4312BC006E78A2 /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				1592AC922A4337BD006E78A2 /* NetworkManagerProtocol.swift */,
+				1592AC942A4337C4006E78A2 /* NetworkManager.swift */,
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+		1592AC7B2A4312C4006E78A2 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		1592AC7C2A43130A006E78A2 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				1592AC7D2A431327006E78A2 /* NetworkError.swift */,
+				1592AC7F2A43132D006E78A2 /* NetworkErrorModel.swift */,
+				1592AC882A4314B0006E78A2 /* NetworkResult.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		1592AC8A2A4314EB006E78A2 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				1592AC8B2A43150A006E78A2 /* NetworkServiceConfig.swift */,
+				1592AC8D2A431579006E78A2 /* NetworkService.swift */,
+				1592AC8F2A4315BF006E78A2 /* NetworkService+Movies.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -384,17 +465,28 @@
 				1592AC102A408D61006E78A2 /* Font.swift in Sources */,
 				1592ABF12A40873A006E78A2 /* SplashVC.swift in Sources */,
 				1592AC3B2A40A336006E78A2 /* ViewModel.swift in Sources */,
+				1592AC8E2A431579006E78A2 /* NetworkService.swift in Sources */,
 				1592AC272A409044006E78A2 /* String+Localization.swift in Sources */,
+				1592AC852A431447006E78A2 /* NetworkHttpType.swift in Sources */,
 				1592AC172A408ED0006E78A2 /* Color.swift in Sources */,
+				1592AC892A4314B0006E78A2 /* NetworkResult.swift in Sources */,
+				1592AC872A43145F006E78A2 /* NetworkRequest.swift in Sources */,
 				1592AC712A430FB3006E78A2 /* Constants+RCValues.swift in Sources */,
+				1592AC802A43132D006E78A2 /* NetworkErrorModel.swift in Sources */,
+				1592AC8C2A43150A006E78A2 /* NetworkServiceConfig.swift in Sources */,
 				1592AC6F2A430F9B006E78A2 /* Constants.swift in Sources */,
 				1592ABD82A408569006E78A2 /* AppDelegate.swift in Sources */,
 				1592AC352A40A2F6006E78A2 /* BaseViewController.swift in Sources */,
+				1592AC902A4315BF006E78A2 /* NetworkService+Movies.swift in Sources */,
 				1592AC122A408D88006E78A2 /* FontType.swift in Sources */,
+				1592AC932A4337BD006E78A2 /* NetworkManagerProtocol.swift in Sources */,
 				1592ABDA2A408569006E78A2 /* SceneDelegate.swift in Sources */,
 				1592AC6C2A430DB6006E78A2 /* RCValues.swift in Sources */,
 				1592AC152A408EAD006E78A2 /* UIColor+Extension.swift in Sources */,
 				1592AC3F2A40A36D006E78A2 /* SplashVM.swift in Sources */,
+				1592AC952A4337C5006E78A2 /* NetworkManager.swift in Sources */,
+				1592AC7E2A431327006E78A2 /* NetworkError.swift in Sources */,
+				1592AC832A4313CD006E78A2 /* OopsConfig.swift in Sources */,
 				1592AC482A40B8BA006E78A2 /* SplashVCState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
