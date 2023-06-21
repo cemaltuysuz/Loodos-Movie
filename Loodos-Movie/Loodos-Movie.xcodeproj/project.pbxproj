@@ -133,7 +133,7 @@
 				1592ABED2A408720006E78A2 /* Core */,
 				1592ABEC2A408717006E78A2 /* App */,
 				1592ABEB2A408709006E78A2 /* Assets */,
-				1592ABEE2A408727006E78A2 /* Flows */,
+				1592ABEE2A408727006E78A2 /* Content */,
 				1592ABE52A40856B006E78A2 /* Info.plist */,
 			);
 			path = "Loodos-Movie";
@@ -171,12 +171,12 @@
 			path = Core;
 			sourceTree = "<group>";
 		};
-		1592ABEE2A408727006E78A2 /* Flows */ = {
+		1592ABEE2A408727006E78A2 /* Content */ = {
 			isa = PBXGroup;
 			children = (
 				1592ABEF2A40872E006E78A2 /* Splash */,
 			);
-			path = Flows;
+			path = Content;
 			sourceTree = "<group>";
 		};
 		1592ABEF2A40872E006E78A2 /* Splash */ = {
