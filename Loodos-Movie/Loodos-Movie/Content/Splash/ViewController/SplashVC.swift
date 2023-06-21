@@ -120,7 +120,11 @@ class SplashVC: ViewController<SplashVM> {
                 break
                 
             case .continueMoviesPage:
-                // TODO: GO HOME PAGE
+                let vm = MoviesVM()
+                let vc = MoviesVC(viewModel: vm)
+                let navVC = UINavigationController(rootViewController: vc)
+                navVC.modalPresentationStyle = .fullScreen
+                self?.present(navVC, animated: true)
                 break
             }
         }

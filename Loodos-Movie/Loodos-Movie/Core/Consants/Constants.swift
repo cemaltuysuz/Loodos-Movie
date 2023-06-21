@@ -7,4 +7,6 @@
 
 import Foundation
 
-enum Constants{}
+enum Constants{
+    static let moviesToken: String = "1c034dab"
+}

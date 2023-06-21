@@ -10,13 +10,12 @@ import Foundation
 extension NetworkService {
     
     enum Movies {
-        case searchMovie(searchText: String)
+        case searchMovie
         
         var config: NetworkServiceConfig {
             switch self {
-            case .searchMovie(let searchText):
-                let url = "\(NetworkService.moviesBase)?t=\(searchText)"
-                return .init(httpMethod: .get, url: url)
+            case .searchMovie:
+                return .init(httpMethod: .get, url: NetworkService.moviesBase.url)
             }
         }
     }

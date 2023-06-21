@@ -14,7 +14,7 @@ enum NetworkService {
     var url: String {
         switch self {
         case .moviesBase:
-            return ""
+            return "http://www.omdbapi.com"
         }
     }
 }
