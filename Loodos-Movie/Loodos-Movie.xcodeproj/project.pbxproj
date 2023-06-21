@@ -315,7 +315,7 @@
 		1592AC722A431253006E78A2 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				1592AC7B2A4312C4006E78A2 /* Service */,
+				1592AC8A2A4314EB006E78A2 /* Service */,
 				1592AC7A2A4312BC006E78A2 /* NetworkManager */,
 				1592AC792A4312B1006E78A2 /* Basics */,
 			);
@@ -325,7 +325,6 @@
 		1592AC792A4312B1006E78A2 /* Basics */ = {
 			isa = PBXGroup;
 			children = (
-				1592AC8A2A4314EB006E78A2 /* Service */,
 				1592AC7C2A43130A006E78A2 /* Error */,
 				1592AC842A431447006E78A2 /* NetworkHttpType.swift */,
 				1592AC862A43145F006E78A2 /* NetworkRequest.swift */,
@@ -340,13 +339,6 @@
 				1592AC942A4337C4006E78A2 /* NetworkManager.swift */,
 			);
 			path = NetworkManager;
-			sourceTree = "<group>";
-		};
-		1592AC7B2A4312C4006E78A2 /* Service */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Service;
 			sourceTree = "<group>";
 		};
 		1592AC7C2A43130A006E78A2 /* Error */ = {

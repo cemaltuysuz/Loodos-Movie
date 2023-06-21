@@ -20,9 +20,9 @@ extension NetworkError {
     var config: OopsConfig {
         switch self {
         case .emptyContent:
-            return OopsConfig(animName: "", title: "Oops!".localized, description: "It looks like no results were found.".localized)
+            return OopsConfig(title: "Oops!".localized, description: "It looks like no results were found.".localized)
         default:
-            return OopsConfig(animName: "", title: "Information".localized, description: "Something went wrong.".localized)
+            return OopsConfig(title: "Information".localized, description: "Something went wrong.".localized)
         }
     }
 }

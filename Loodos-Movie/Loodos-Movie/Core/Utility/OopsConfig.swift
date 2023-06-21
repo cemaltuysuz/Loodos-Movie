@@ -8,7 +8,6 @@
 import Foundation
 
 struct OopsConfig {
-    var animName: String
     var title: String
     var description: String
 }

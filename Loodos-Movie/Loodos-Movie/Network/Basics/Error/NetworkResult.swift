@@ -7,7 +7,7 @@
 
 import Foundation
 
-public enum NetworkResult<Success,Failure> where Failure: NetworkErrorModelResponseable {
+public enum NetworkResult<Success,Failure> where Failure: NetworkErrorModelResponseable{
     case success(Success)
     case failure(Failure)
 }
