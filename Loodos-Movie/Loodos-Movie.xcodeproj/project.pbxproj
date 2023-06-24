@@ -30,7 +30,6 @@
 		1592AC482A40B8BA006E78A2 /* SplashVCState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1592AC472A40B8BA006E78A2 /* SplashVCState.swift */; };
 		1592AC5C2A40F16A006E78A2 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 1592AC5B2A40F16A006E78A2 /* Lottie */; };
 		1592AC5F2A40F1C1006E78A2 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 1592AC5E2A40F1C1006E78A2 /* SnapKit */; };
-		1592AC622A41B073006E78A2 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 1592AC612A41B073006E78A2 /* Kingfisher */; };
 		1592AC652A41B1BD006E78A2 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 1592AC642A41B1BD006E78A2 /* FirebaseAnalytics */; };
 		1592AC672A41B1BD006E78A2 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 1592AC662A41B1BD006E78A2 /* FirebaseMessaging */; };
 		1592AC692A41B1BD006E78A2 /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = 1592AC682A41B1BD006E78A2 /* FirebaseRemoteConfig */; };
@@ -57,6 +56,11 @@
 		1592ACAB2A43B810006E78A2 /* MoviesRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1592ACAA2A43B810006E78A2 /* MoviesRepositoryImpl.swift */; };
 		15AAF13A2A474D3B00319F9D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AAF1392A474D3B00319F9D /* ViewController.swift */; };
 		15AAF13C2A47527500319F9D /* MoviesVCState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AAF13B2A47527500319F9D /* MoviesVCState.swift */; };
+		15AAF13E2A4757ED00319F9D /* UICollectionView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AAF13D2A4757ED00319F9D /* UICollectionView+Extension.swift */; };
+		15AAF1422A47593900319F9D /* MovieCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AAF1412A47593900319F9D /* MovieCollectionViewCell.swift */; };
+		15AAF1442A475C8500319F9D /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AAF1432A475C8500319F9D /* ImageLoader.swift */; };
+		15AAF1462A475CEE00319F9D /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AAF1452A475CEE00319F9D /* UIImageView+Extension.swift */; };
+		15AAF1482A475D8900319F9D /* Collection+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AAF1472A475D8900319F9D /* Collection+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -106,6 +110,11 @@
 		1592ACAA2A43B810006E78A2 /* MoviesRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesRepositoryImpl.swift; sourceTree = "<group>"; };
 		15AAF1392A474D3B00319F9D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		15AAF13B2A47527500319F9D /* MoviesVCState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesVCState.swift; sourceTree = "<group>"; };
+		15AAF13D2A4757ED00319F9D /* UICollectionView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extension.swift"; sourceTree = "<group>"; };
+		15AAF1412A47593900319F9D /* MovieCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCollectionViewCell.swift; sourceTree = "<group>"; };
+		15AAF1432A475C8500319F9D /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		15AAF1452A475CEE00319F9D /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
+		15AAF1472A475D8900319F9D /* Collection+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,7 +122,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1592AC622A41B073006E78A2 /* Kingfisher in Frameworks */,
 				1592AC5C2A40F16A006E78A2 /* Lottie in Frameworks */,
 				1592AC672A41B1BD006E78A2 /* FirebaseMessaging in Frameworks */,
 				1592AC692A41B1BD006E78A2 /* FirebaseRemoteConfig in Frameworks */,
@@ -256,6 +264,9 @@
 			children = (
 				1592AC262A409044006E78A2 /* String+Localization.swift */,
 				1592AC452A40AC33006E78A2 /* UIView+Extension.swift */,
+				15AAF13D2A4757ED00319F9D /* UICollectionView+Extension.swift */,
+				15AAF1452A475CEE00319F9D /* UIImageView+Extension.swift */,
+				15AAF1472A475D8900319F9D /* Collection+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -316,6 +327,7 @@
 			children = (
 				1592AC6B2A430DB6006E78A2 /* RCValues.swift */,
 				1592AC822A4313CD006E78A2 /* OopsConfig.swift */,
+				15AAF1432A475C8500319F9D /* ImageLoader.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -381,10 +393,10 @@
 		1592AC962A43A9C2006E78A2 /* Movies */ = {
 			isa = PBXGroup;
 			children = (
+				15AAF13F2A47592100319F9D /* View */,
 				1592ACA72A43B7B5006E78A2 /* Repository */,
 				1592ACA02A43AEC9006E78A2 /* Model */,
 				1592AC982A43A9DD006E78A2 /* ViewModel */,
-				1592AC972A43A9D5006E78A2 /* ViewController */,
 			);
 			path = Movies;
 			sourceTree = "<group>";
@@ -425,6 +437,23 @@
 			path = Repository;
 			sourceTree = "<group>";
 		};
+		15AAF13F2A47592100319F9D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				15AAF1402A47592B00319F9D /* CollectionView */,
+				1592AC972A43A9D5006E78A2 /* ViewController */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		15AAF1402A47592B00319F9D /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				15AAF1412A47593900319F9D /* MovieCollectionViewCell.swift */,
+			);
+			path = CollectionView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -444,7 +473,6 @@
 			packageProductDependencies = (
 				1592AC5B2A40F16A006E78A2 /* Lottie */,
 				1592AC5E2A40F1C1006E78A2 /* SnapKit */,
-				1592AC612A41B073006E78A2 /* Kingfisher */,
 				1592AC642A41B1BD006E78A2 /* FirebaseAnalytics */,
 				1592AC662A41B1BD006E78A2 /* FirebaseMessaging */,
 				1592AC682A41B1BD006E78A2 /* FirebaseRemoteConfig */,
@@ -481,7 +509,6 @@
 			packageReferences = (
 				1592AC5A2A40F16A006E78A2 /* XCRemoteSwiftPackageReference "lottie-ios" */,
 				1592AC5D2A40F1C1006E78A2 /* XCRemoteSwiftPackageReference "SnapKit" */,
-				1592AC602A41B073006E78A2 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 				1592AC632A41B1BD006E78A2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = 1592ABD52A408569006E78A2 /* Products */;
@@ -516,6 +543,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15AAF1482A475D8900319F9D /* Collection+Extension.swift in Sources */,
 				1592AC462A40AC33006E78A2 /* UIView+Extension.swift in Sources */,
 				1592AC102A408D61006E78A2 /* Font.swift in Sources */,
 				1592ABF12A40873A006E78A2 /* SplashVC.swift in Sources */,
@@ -526,6 +554,7 @@
 				1592AC8E2A431579006E78A2 /* NetworkService.swift in Sources */,
 				1592AC272A409044006E78A2 /* String+Localization.swift in Sources */,
 				1592AC852A431447006E78A2 /* NetworkHttpType.swift in Sources */,
+				15AAF1462A475CEE00319F9D /* UIImageView+Extension.swift in Sources */,
 				1592AC172A408ED0006E78A2 /* Color.swift in Sources */,
 				1592AC892A4314B0006E78A2 /* NetworkResult.swift in Sources */,
 				1592AC872A43145F006E78A2 /* NetworkRequest.swift in Sources */,
@@ -547,11 +576,14 @@
 				1592AC152A408EAD006E78A2 /* UIColor+Extension.swift in Sources */,
 				1592ACA62A43AFE5006E78A2 /* Rating.swift in Sources */,
 				1592AC3F2A40A36D006E78A2 /* SplashVM.swift in Sources */,
+				15AAF1422A47593900319F9D /* MovieCollectionViewCell.swift in Sources */,
 				15AAF13C2A47527500319F9D /* MoviesVCState.swift in Sources */,
 				1592AC952A4337C5006E78A2 /* NetworkManager.swift in Sources */,
+				15AAF13E2A4757ED00319F9D /* UICollectionView+Extension.swift in Sources */,
 				1592AC7E2A431327006E78A2 /* NetworkError.swift in Sources */,
 				1592AC832A4313CD006E78A2 /* OopsConfig.swift in Sources */,
 				1592AC482A40B8BA006E78A2 /* SplashVCState.swift in Sources */,
+				15AAF1442A475C8500319F9D /* ImageLoader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -787,14 +819,6 @@
 				minimumVersion = 5.0.0;
 			};
 		};
-		1592AC602A41B073006E78A2 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
-			requirement = {
-				kind = exactVersion;
-				version = 7.0.0;
-			};
-		};
 		1592AC632A41B1BD006E78A2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
@@ -815,11 +839,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 1592AC5D2A40F1C1006E78A2 /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
-		};
-		1592AC612A41B073006E78A2 /* Kingfisher */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 1592AC602A41B073006E78A2 /* XCRemoteSwiftPackageReference "Kingfisher" */;
-			productName = Kingfisher;
 		};
 		1592AC642A41B1BD006E78A2 /* FirebaseAnalytics */ = {
 			isa = XCSwiftPackageProductDependency;
