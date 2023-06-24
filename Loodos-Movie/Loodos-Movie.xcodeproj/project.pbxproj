@@ -24,7 +24,6 @@
 		1592AC272A409044006E78A2 /* String+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1592AC262A409044006E78A2 /* String+Localization.swift */; };
 		1592AC2A2A40938D006E78A2 /* ThreeBallLoading.json in Resources */ = {isa = PBXBuildFile; fileRef = 1592AC292A40938C006E78A2 /* ThreeBallLoading.json */; };
 		1592AC352A40A2F6006E78A2 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1592AC342A40A2F6006E78A2 /* BaseViewController.swift */; };
-		1592AC372A40A300006E78A2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1592AC362A40A300006E78A2 /* ViewController.swift */; };
 		1592AC3B2A40A336006E78A2 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1592AC3A2A40A336006E78A2 /* ViewModel.swift */; };
 		1592AC3F2A40A36D006E78A2 /* SplashVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1592AC3E2A40A36D006E78A2 /* SplashVM.swift */; };
 		1592AC462A40AC33006E78A2 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1592AC452A40AC33006E78A2 /* UIView+Extension.swift */; };
@@ -56,6 +55,8 @@
 		1592ACA62A43AFE5006E78A2 /* Rating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1592ACA52A43AFE5006E78A2 /* Rating.swift */; };
 		1592ACA92A43B7C2006E78A2 /* MoviesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1592ACA82A43B7C2006E78A2 /* MoviesRepository.swift */; };
 		1592ACAB2A43B810006E78A2 /* MoviesRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1592ACAA2A43B810006E78A2 /* MoviesRepositoryImpl.swift */; };
+		15AAF13A2A474D3B00319F9D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AAF1392A474D3B00319F9D /* ViewController.swift */; };
+		15AAF13C2A47527500319F9D /* MoviesVCState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AAF13B2A47527500319F9D /* MoviesVCState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -78,7 +79,6 @@
 		1592AC262A409044006E78A2 /* String+Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localization.swift"; sourceTree = "<group>"; };
 		1592AC292A40938C006E78A2 /* ThreeBallLoading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ThreeBallLoading.json; sourceTree = "<group>"; };
 		1592AC342A40A2F6006E78A2 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
-		1592AC362A40A300006E78A2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1592AC3A2A40A336006E78A2 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		1592AC3E2A40A36D006E78A2 /* SplashVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashVM.swift; sourceTree = "<group>"; };
 		1592AC452A40AC33006E78A2 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
@@ -104,6 +104,8 @@
 		1592ACA52A43AFE5006E78A2 /* Rating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rating.swift; sourceTree = "<group>"; };
 		1592ACA82A43B7C2006E78A2 /* MoviesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesRepository.swift; sourceTree = "<group>"; };
 		1592ACAA2A43B810006E78A2 /* MoviesRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesRepositoryImpl.swift; sourceTree = "<group>"; };
+		15AAF1392A474D3B00319F9D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		15AAF13B2A47527500319F9D /* MoviesVCState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesVCState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -279,7 +281,7 @@
 			isa = PBXGroup;
 			children = (
 				1592AC342A40A2F6006E78A2 /* BaseViewController.swift */,
-				1592AC362A40A300006E78A2 /* ViewController.swift */,
+				15AAF1392A474D3B00319F9D /* ViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -391,6 +393,7 @@
 			isa = PBXGroup;
 			children = (
 				1592AC9E2A43AA22006E78A2 /* MoviesVC.swift */,
+				15AAF13B2A47527500319F9D /* MoviesVCState.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -513,7 +516,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1592AC372A40A300006E78A2 /* ViewController.swift in Sources */,
 				1592AC462A40AC33006E78A2 /* UIView+Extension.swift in Sources */,
 				1592AC102A408D61006E78A2 /* Font.swift in Sources */,
 				1592ABF12A40873A006E78A2 /* SplashVC.swift in Sources */,
@@ -539,11 +541,13 @@
 				1592AC122A408D88006E78A2 /* FontType.swift in Sources */,
 				1592AC932A4337BD006E78A2 /* NetworkManagerProtocol.swift in Sources */,
 				1592ACA22A43AED4006E78A2 /* MoviesResponse.swift in Sources */,
+				15AAF13A2A474D3B00319F9D /* ViewController.swift in Sources */,
 				1592ABDA2A408569006E78A2 /* SceneDelegate.swift in Sources */,
 				1592AC6C2A430DB6006E78A2 /* RCValues.swift in Sources */,
 				1592AC152A408EAD006E78A2 /* UIColor+Extension.swift in Sources */,
 				1592ACA62A43AFE5006E78A2 /* Rating.swift in Sources */,
 				1592AC3F2A40A36D006E78A2 /* SplashVM.swift in Sources */,
+				15AAF13C2A47527500319F9D /* MoviesVCState.swift in Sources */,
 				1592AC952A4337C5006E78A2 /* NetworkManager.swift in Sources */,
 				1592AC7E2A431327006E78A2 /* NetworkError.swift in Sources */,
 				1592AC832A4313CD006E78A2 /* OopsConfig.swift in Sources */,
@@ -694,13 +698,14 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = AA46V7LMAT;
+				DEVELOPMENT_TEAM = 34WTB4U8S7;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Loodos-Movie/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -721,13 +726,14 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = AA46V7LMAT;
+				DEVELOPMENT_TEAM = 34WTB4U8S7;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Loodos-Movie/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

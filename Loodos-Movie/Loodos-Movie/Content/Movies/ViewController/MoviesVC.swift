@@ -21,9 +21,8 @@ class MoviesVC: ViewController<MoviesVM> {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-//        setupUI()
-//        configureUI()
-        viewModel.fetchMovies(with: "fast and")
+        setupUI()
+        configureUI()
     }
     
     private func setupUI() {
@@ -33,8 +32,8 @@ class MoviesVC: ViewController<MoviesVM> {
         layout.estimatedItemSize = .zero
         moviesCollectionView.collectionViewLayout = layout
         
-//        moviesCollectionView.delegate = self
-//        moviesCollectionView.dataSource = self
+        moviesCollectionView.delegate = self
+        moviesCollectionView.dataSource = self
         moviesCollectionView.showsVerticalScrollIndicator = false
     }
     
@@ -53,20 +52,32 @@ class MoviesVC: ViewController<MoviesVM> {
             make.bottom.equalToSuperview()
         }
     }
+    
+    private func configureBindings() {
+        viewModel.onStateChanged = { state in
+            switch state {
+            case .moviesLoaded:
+                break
+            case .showSearch:
+                break
+            }
+        }
+    }
 }
-//
-//extension MoviesVC: UICollectionViewDelegate, UICollectionViewDataSource {
-//    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-//
-//    }
-//
-//    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-//
-//    }
-//}
+
+extension MoviesVC: UICollectionViewDelegate, UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        viewModel.movies.count
+    }
+
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        return UICollectionViewCell()
+    }
+}
 
 extension MoviesVC: UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        // TODO: Search
+        viewModel.fetchMovies(with: searchText)
+
     }
 }

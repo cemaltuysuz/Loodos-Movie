@@ -12,10 +12,10 @@ class MoviesRepositoryImpl: MoviesRepository {
     func fetchMovies(_ searchText: String, page: Int, completionHandler: @escaping ((NetworkResult<MoviesResponse?, NetworkErrorModel>) -> Void)) {
         
         let urlParams: [String: String] = [
-            "t" : searchText,
+            "apikey" : Constants.moviesToken,
+            "s" : searchText,
             "page" : "\(page)",
-            "type" : "movie",
-            "apikey" : Constants.moviesToken
+            "type" : "movie"
         ]
         let request = NetworkRequest(
             serviceConfig: NetworkService.Movies.searchMovie.config,

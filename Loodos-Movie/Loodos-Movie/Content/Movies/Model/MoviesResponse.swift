@@ -16,3 +16,15 @@ struct MoviesResponse : Decodable {
         case totalResults = "totalResults"
     }
 }
+
+extension MoviesResponse {
+    var resultCount: Int {
+        guard
+            let results = totalResults,
+            let count = Int(results)
+        else {
+            return 0
+        }
+        return count
+    }
+}
