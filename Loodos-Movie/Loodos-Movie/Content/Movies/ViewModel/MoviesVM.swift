@@ -42,7 +42,9 @@ class MoviesVM: ViewModel {
             resetPagination()
         }
         searchWorkItem = DispatchWorkItem {
+            Process.shared.show()
             self.repository.fetchMovies(searchText, page: self.pageNumber) {[weak self] result in
+                Process.shared.hide()
                 switch result {
                 case .success(let movies):
                     self?.moviesResponse = movies
@@ -59,6 +61,7 @@ class MoviesVM: ViewModel {
                     self?.onErrorReceived?(error)
                     break
                 }
+                
             }
         }
         DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(1), execute: searchWorkItem!)

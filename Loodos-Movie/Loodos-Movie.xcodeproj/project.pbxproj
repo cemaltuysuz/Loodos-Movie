@@ -63,6 +63,7 @@
 		15AAF15A2A478B2E00319F9D /* MovieDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AAF1592A478B2E00319F9D /* MovieDetailVC.swift */; };
 		15AAF15D2A478B4500319F9D /* MovieDetailVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AAF15C2A478B4500319F9D /* MovieDetailVM.swift */; };
 		15AAF1602A4881DF00319F9D /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 15AAF15F2A4881DF00319F9D /* Kingfisher */; };
+		15AAF1642A48941900319F9D /* Process.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AAF1632A48941900319F9D /* Process.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -118,6 +119,7 @@
 		15AAF1472A475D8900319F9D /* Collection+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+Extension.swift"; sourceTree = "<group>"; };
 		15AAF1592A478B2E00319F9D /* MovieDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailVC.swift; sourceTree = "<group>"; };
 		15AAF15C2A478B4500319F9D /* MovieDetailVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailVM.swift; sourceTree = "<group>"; };
+		15AAF1632A48941900319F9D /* Process.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Process.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -332,6 +334,7 @@
 			children = (
 				1592AC6B2A430DB6006E78A2 /* RCValues.swift */,
 				15AAF1432A475C8500319F9D /* ImageLoader.swift */,
+				15AAF1632A48941900319F9D /* Process.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -593,6 +596,7 @@
 				1592ACAB2A43B810006E78A2 /* MoviesRepositoryImpl.swift in Sources */,
 				1592ACA92A43B7C2006E78A2 /* MoviesRepository.swift in Sources */,
 				1592AC712A430FB3006E78A2 /* Constants+RCValues.swift in Sources */,
+				15AAF1642A48941900319F9D /* Process.swift in Sources */,
 				1592AC802A43132D006E78A2 /* NetworkErrorModel.swift in Sources */,
 				1592AC8C2A43150A006E78A2 /* NetworkServiceConfig.swift in Sources */,
 				1592AC6F2A430F9B006E78A2 /* Constants.swift in Sources */,
