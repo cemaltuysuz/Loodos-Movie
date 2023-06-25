@@ -19,3 +19,25 @@ extension UICollectionView {
         return dequeueReusableCell(withReuseIdentifier: identity, for: indexPath) as! T
     }
 }
+
+extension UICollectionView {
+    
+    func showBannerMessage(message: String) {
+        DispatchQueue.main.async {
+            let label = UILabel(frame: CGRect(x: 0, y: 0, width: self.bounds.size.width, height: self.bounds.size.height))
+            label.numberOfLines = 0
+            label.textAlignment = .center
+            label.textColor = .colorPrimary
+            label.font = Font.font(.cabinSemiBold, size: 17.0)
+            label.text = message
+
+            label.sizeToFit()
+
+            self.backgroundView = label
+        }
+    }
+    
+    func clearBackground() {
+        backgroundView = nil
+    }
+}

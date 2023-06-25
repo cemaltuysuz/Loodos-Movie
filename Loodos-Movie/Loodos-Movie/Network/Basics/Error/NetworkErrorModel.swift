@@ -37,3 +37,9 @@ public extension NetworkErrorModel{
         return error
     }
 }
+
+public extension NetworkErrorModel{
+    var canRequestRepeatable: Bool {
+        errorType == .emptyContent || errorType == .failedResponse || errorType == .parseError
+    }
+}

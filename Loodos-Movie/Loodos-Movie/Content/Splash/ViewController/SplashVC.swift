@@ -123,6 +123,7 @@ class SplashVC: ViewController<SplashVM> {
                 let vm = MoviesVM()
                 let vc = MoviesVC(viewModel: vm)
                 let navVC = UINavigationController(rootViewController: vc)
+                navVC.navigationBar.prefersLargeTitles = true
                 navVC.modalPresentationStyle = .fullScreen
                 self?.present(navVC, animated: true)
                 break

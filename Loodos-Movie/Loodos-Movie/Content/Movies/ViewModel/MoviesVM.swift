@@ -11,40 +11,61 @@ class MoviesVM: ViewModel {
         
     private var searchWorkItem: DispatchWorkItem?
     private let repository: MoviesRepository = MoviesRepositoryImpl()
+    private var pageNumber: Int = 1
     private var moviesResponse: MoviesResponse? {
         didSet{
+            movies += moviesResponse?.movies ?? []
             onStateChanged?(.moviesLoaded)
         }
     }
     
     var onStateChanged: ((MoviesVCState)->Void)?
     
-    var movies: [Movie] {
-        moviesResponse?.movies ?? []
-    }
+    var movies: [Movie] = []
     
     var totalCount: Int {
         moviesResponse?.resultCount ?? 0
     }
     
-    private var pageNumber: Int = 1
-
-    
     func fetchMovies(with searchText: String, isNextPage: Bool = false) {
         searchWorkItem?.cancel()
-        pageNumber = isNextPage ? pageNumber + 1 : pageNumber
+        
+        // check search test is empty
+        if searchText.isEmpty {
+            resetPagination()
+            onStateChanged?(.showSearch)
+            return
+        }
+        
+        // check is this a new movie search ?
+        if !isNextPage {
+            resetPagination()
+        }
         searchWorkItem = DispatchWorkItem {
             self.repository.fetchMovies(searchText, page: self.pageNumber) {[weak self] result in
                 switch result {
                 case .success(let movies):
                     self?.moviesResponse = movies
+                    self?.pageNumber += 1
                     break
                 case .failure(let error):
-                    print("fail oldu = \(error.message ?? "")")
+                    if error.canRequestRepeatable {
+                        self?.askRequestRepeat?{
+                            self?.pageNumber -= 1
+                            self?.fetchMovies(with: searchText, isNextPage: isNextPage)
+                        }
+                        return
+                    }
+                    self?.onErrorReceived?(error)
                     break
                 }
             }
         }
         DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(1), execute: searchWorkItem!)
+    }
+    
+    func resetPagination() {
+        pageNumber = 1
+        movies = []
     }
 }

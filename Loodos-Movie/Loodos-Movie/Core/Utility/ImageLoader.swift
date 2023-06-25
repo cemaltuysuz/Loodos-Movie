@@ -6,36 +6,33 @@
 //
 
 import UIKit
+import Kingfisher
 
 public class ImageLoader{
-    
-    static func load(name: String) -> UIImage? {
-        if #available(iOS 13.0, *) {
-            return UIImage.init(systemName: name)
-        } else {
-            return UIImage.init(named: name)
-        }
-    }
-    
-    static func load(from urlString: String?, completionHandler: @escaping((UIImage?)->Void)) {
+
+    static func load(from urlString: String?, completion: @escaping ((UIImage?) -> Void)) {
         guard
             let urlString = urlString,
-            let url = URL(string: urlString)
+            let url = URL.init(string: urlString)
         else {
-            print("invalid image url : \(urlString ?? "")")
+            print("------| Invalid image url format : \(urlString) |----------")
+            completion(nil)
             return
-        }
-        URLSession.shared.dataTask(with: url) { data, response, error in
-            guard
-                let httpURLResponse = response as? HTTPURLResponse, httpURLResponse.statusCode == 200,
-                let mimeType = response?.mimeType, mimeType.hasPrefix("image"),
-                let data = data, error == nil,
-                let image = UIImage(data: data)
-            else {
-                return completionHandler(nil)
-            }
-            completionHandler(image)
-        }
-        .resume()
+         }
+         let resource = ImageResource(downloadURL: url)
+        
+         KingfisherManager.shared.retrieveImage(with: resource,
+                                                options: [
+                                                    .cacheOriginalImage
+                                                ],
+                                                progressBlock: nil) { result in
+             switch result {
+             case .success(let value):
+                 return completion(value.image)
+             case .failure(let error):
+                 print("------| Error received while retrieving image from url: \(error.localizedDescription) |----------")
+                 completion(nil)
+             }
+         }
     }
 }

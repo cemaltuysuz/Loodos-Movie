@@ -1,0 +1,25 @@
+/* 
+  Localizable.strings
+  Loodos-Movie
+
+  Created by Cemal Tuysuz on 19.06.2023.
+  
+*/
+
+"Reconnect" = "Tekrar Bağlan";
+"No internet connection" = "İnternet bağlantısı yok";
+"It looks like no results were found." = "Sonuç bulunamadı gibi gözüküyor..";
+"Information" = "Bilgilendirme";
+"Something went wrong." = "Something went wrong.";
+"Search" = "Ara";
+"Movies" = "Filmler";
+"search_banner_message" = "Filmler için arama yap 🔍";
+"noData_banner_message" = "'%@' için bir sonuç bulunamadı 😔";
+"Request Failed" = "Başarısız İstek";
+"Your request has been failed. Do you want to try again ?" = "İstek başarısız. Tekrar denemek ister misin ?";
+"Yes" = "Evet";
+"No" = "Hayır";
+"Your request has been failed. Please, try again later." = "İstek başarısız. Lütfen daha sonra tekrar dene";
+"Close" = "Kapat";
+
+

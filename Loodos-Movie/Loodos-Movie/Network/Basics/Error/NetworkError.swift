@@ -14,15 +14,3 @@ public enum NetworkError: Int, Error {
     case parseError = 103
     case emptyContent = 104
 }
-
-extension NetworkError {
-    
-    var config: OopsConfig {
-        switch self {
-        case .emptyContent:
-            return OopsConfig(title: "Oops!".localized, description: "It looks like no results were found.".localized)
-        default:
-            return OopsConfig(title: "Information".localized, description: "Something went wrong.".localized)
-        }
-    }
-}

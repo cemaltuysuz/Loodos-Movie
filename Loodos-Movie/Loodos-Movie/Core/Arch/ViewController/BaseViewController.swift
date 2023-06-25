@@ -11,18 +11,41 @@ class BaseViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupUI()
+    }
+
+    private func setupUI() {
         view.backgroundColor = .systemBackground
     }
-    
+}
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+extension BaseViewController {
+    func showAlert(
+        title: String,
+        description: String,
+        possitiveButtonText: String,
+        negativeButtonText: String? = nil,
+        
+        onClickedPossitveButton: (() -> Void)? = nil,
+        onClickedNegativeButton: (() -> Void)? = nil
+    ) {
+        DispatchQueue.main.async {
+            let alert = UIAlertController(title: title, message: description, preferredStyle: .alert)
+            
+            let possitiveAction = UIAlertAction(title: possitiveButtonText, style: .default) { _ in
+                onClickedPossitveButton?()
+            }
+            
+            alert.addAction(possitiveAction)
+            if let negativeButtonText = negativeButtonText {
+                let negativeAction = UIAlertAction(title: negativeButtonText, style: .cancel) { _ in
+                    onClickedNegativeButton?()
+                }
+                alert.addAction(negativeAction)
+            }
+            
+            alert.view.tintColor = .colorPrimary
+            self.present(alert, animated: true)
+        }
     }
-    */
-
 }
