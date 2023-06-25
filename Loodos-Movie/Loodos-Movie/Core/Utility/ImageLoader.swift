@@ -9,6 +9,11 @@ import UIKit
 import Kingfisher
 
 public class ImageLoader{
+    
+    static func load(name: String?) -> UIImage? {
+        guard let name = name else { return nil }
+        return UIImage.init(named: name) ?? UIImage.init(systemName: name)
+    }
 
     static func load(from urlString: String?, completion: @escaping ((UIImage?) -> Void)) {
         guard

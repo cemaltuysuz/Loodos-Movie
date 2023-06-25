@@ -38,7 +38,7 @@ class ViewController<T: ViewModel>: BaseViewController {
         
         viewModel.onErrorReceived = {[weak self] error in
             self?.showAlert(title: "Request Failed".localized,
-                            description: "Your request has been failed. Please, try again later.",
+                            description: "Your request has been failed. Please, try again later.".localized,
                             possitiveButtonText: "Close".localized)
         }
     }

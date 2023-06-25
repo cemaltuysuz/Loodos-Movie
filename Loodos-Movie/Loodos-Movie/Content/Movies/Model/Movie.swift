@@ -8,7 +8,6 @@
 import Foundation
 
 struct Movie : Codable {
-    
     let title : String?
     let year : String?
     let imdbID : String?
@@ -25,4 +24,11 @@ struct Movie : Codable {
     }
 }
 
+extension Movie {
+    var properties: [Property] {
+        let year = Property(propertyValue: year ?? "", imageIcon: "calendar")
+        let type = Property(propertyValue: type ?? "", imageIcon: "tv")
+        return [year, type]
+    }
+}
 

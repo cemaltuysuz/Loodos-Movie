@@ -14,5 +14,6 @@ class MovieDetailVM: ViewModel {
     init(with movie: Movie) {
         self.movie = movie
         super.init()
+        EventManager.shared.event(type: .movieViewed, value: movie.title ?? "")
     }
 }

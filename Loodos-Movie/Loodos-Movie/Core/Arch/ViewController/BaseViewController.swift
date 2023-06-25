@@ -16,6 +16,7 @@ class BaseViewController: UIViewController {
 
     private func setupUI() {
         view.backgroundColor = .systemBackground
+        navigationController?.navigationBar.tintColor = .colorPrimary
     }
 }
 
