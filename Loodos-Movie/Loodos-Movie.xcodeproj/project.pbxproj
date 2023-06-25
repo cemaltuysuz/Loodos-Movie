@@ -11,7 +11,6 @@
 		1592ABDA2A408569006E78A2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1592ABD92A408569006E78A2 /* SceneDelegate.swift */; };
 		1592ABE12A40856B006E78A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1592ABE02A40856B006E78A2 /* Assets.xcassets */; };
 		1592ABF12A40873A006E78A2 /* SplashVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1592ABF02A40873A006E78A2 /* SplashVC.swift */; };
-		1592AC062A408CE8006E78A2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1592AC052A408CE7006E78A2 /* GoogleService-Info.plist */; };
 		1592AC0A2A408D2F006E78A2 /* Cabin-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1592AC092A408D2F006E78A2 /* Cabin-Bold.ttf */; };
 		1592AC0C2A408D3C006E78A2 /* Cabin-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1592AC0B2A408D3B006E78A2 /* Cabin-Medium.ttf */; };
 		1592AC0E2A408D45006E78A2 /* Cabin-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1592AC0D2A408D45006E78A2 /* Cabin-SemiBold.ttf */; };
@@ -67,6 +66,7 @@
 		15AAF1682A4898B400319F9D /* Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AAF1672A4898B400319F9D /* Property.swift */; };
 		15AAF16A2A4898F800319F9D /* PropertyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AAF1692A4898F800319F9D /* PropertyView.swift */; };
 		15AAF16E2A48A24100319F9D /* EventManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AAF16D2A48A24100319F9D /* EventManager.swift */; };
+		15AAF1712A48B47600319F9D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 15AAF1702A48B47600319F9D /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,7 +76,6 @@
 		1592ABE02A40856B006E78A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1592ABE52A40856B006E78A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1592ABF02A40873A006E78A2 /* SplashVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashVC.swift; sourceTree = "<group>"; };
-		1592AC052A408CE7006E78A2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		1592AC092A408D2F006E78A2 /* Cabin-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cabin-Bold.ttf"; sourceTree = "<group>"; };
 		1592AC0B2A408D3B006E78A2 /* Cabin-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cabin-Medium.ttf"; sourceTree = "<group>"; };
 		1592AC0D2A408D45006E78A2 /* Cabin-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cabin-SemiBold.ttf"; sourceTree = "<group>"; };
@@ -126,6 +125,8 @@
 		15AAF1672A4898B400319F9D /* Property.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Property.swift; sourceTree = "<group>"; };
 		15AAF1692A4898F800319F9D /* PropertyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyView.swift; sourceTree = "<group>"; };
 		15AAF16D2A48A24100319F9D /* EventManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventManager.swift; sourceTree = "<group>"; };
+		15AAF16F2A48AB4A00319F9D /* Loodos-Movie.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Loodos-Movie.entitlements"; sourceTree = "<group>"; };
+		15AAF1702A48B47600319F9D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,7 +165,8 @@
 		1592ABD62A408569006E78A2 /* Loodos-Movie */ = {
 			isa = PBXGroup;
 			children = (
-				1592AC052A408CE7006E78A2 /* GoogleService-Info.plist */,
+				15AAF1702A48B47600319F9D /* GoogleService-Info.plist */,
+				15AAF16F2A48AB4A00319F9D /* Loodos-Movie.entitlements */,
 				1592AC722A431253006E78A2 /* Network */,
 				1592ABED2A408720006E78A2 /* Core */,
 				1592ABEC2A408717006E78A2 /* App */,
@@ -577,11 +579,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				1592ABE12A40856B006E78A2 /* Assets.xcassets in Resources */,
+				15AAF1712A48B47600319F9D /* GoogleService-Info.plist in Resources */,
 				1592AC1B2A408FAD006E78A2 /* Localizable.strings in Resources */,
 				1592AC0E2A408D45006E78A2 /* Cabin-SemiBold.ttf in Resources */,
 				1592AC202A408FBE006E78A2 /* Localizable.strings in Resources */,
 				1592AC0A2A408D2F006E78A2 /* Cabin-Bold.ttf in Resources */,
-				1592AC062A408CE8006E78A2 /* GoogleService-Info.plist in Resources */,
 				1592AC2A2A40938D006E78A2 /* ThreeBallLoading.json in Resources */,
 				1592AC0C2A408D3C006E78A2 /* Cabin-Medium.ttf in Resources */,
 			);
@@ -784,6 +786,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Loodos-Movie/Loodos-Movie.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 34WTB4U8S7;
@@ -793,14 +797,16 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "cemaltuysuz.Loodos-Movie";
+				PRODUCT_BUNDLE_IDENTIFIER = cemaltuysuz.loodosmovie;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -812,6 +818,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Loodos-Movie/Loodos-Movie.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 34WTB4U8S7;
@@ -821,14 +829,16 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "cemaltuysuz.Loodos-Movie";
+				PRODUCT_BUNDLE_IDENTIFIER = cemaltuysuz.loodosmovie;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

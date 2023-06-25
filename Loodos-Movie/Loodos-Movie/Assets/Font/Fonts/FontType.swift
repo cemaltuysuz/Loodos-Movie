@@ -8,7 +8,7 @@
 import Foundation
 
 public enum FontType: String{
-    case cabinSemiBold = "CabinSemiBold"
-    case cabinMedium = "CabinMedium"
-    case cabinBold = "CabinBold"
+    case cabinSemiBold = "Cabin-SemiBold"
+    case cabinMedium = "Cabin-Medium"
+    case cabinBold = "Cabin-Bold"
 }

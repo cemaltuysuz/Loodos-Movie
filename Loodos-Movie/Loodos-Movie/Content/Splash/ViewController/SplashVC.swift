@@ -52,6 +52,10 @@ class SplashVC: ViewController<SplashVM> {
         return view
     }()
     
+    deinit {
+        NotificationCenter.default.removeObserver(self)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
@@ -59,6 +63,7 @@ class SplashVC: ViewController<SplashVM> {
         configureRCValues()
         setupBindings()
         viewModel.enterFlow()
+        observeRCValues()
     }
     
     func configureUI() {
@@ -136,5 +141,17 @@ class SplashVC: ViewController<SplashVM> {
 extension SplashVC {
     func onClickedConnectButton() {
         viewModel.enterFlow()
+    }
+}
+
+private extension SplashVC {
+    func observeRCValues() {
+        NotificationCenter.default.addObserver(self, selector: #selector(self.onRCValuesUpdated), name: Notification.Name(RCValues.notificationKey), object: nil)
+
+    }
+    
+    @objc
+    func onRCValuesUpdated() {
+        configureRCValues()
     }
 }

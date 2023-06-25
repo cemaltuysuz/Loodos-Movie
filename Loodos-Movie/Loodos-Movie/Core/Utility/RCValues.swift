@@ -9,11 +9,10 @@ import Foundation
 import Firebase
 
 class RCValues {
-    
+    static let notificationKey: String = "RCValueNotify"
     static let sharedInstance = RCValues()
     private var remoteConfig: RemoteConfig!
-    
-    
+        
     private init() {
         setRemoteConfig()
         loadDefaultValues()
@@ -34,7 +33,15 @@ class RCValues {
     }
     
     func fetch() {
-        remoteConfig.fetch()
+        remoteConfig.fetchAndActivate { status, error in
+
+            if let error = error {
+                print ("Got an error fetching remote values \(error)")
+                return
+            }
+
+            NotificationCenter.default.post(name: NSNotification.Name(RCValues.notificationKey), object: nil)
+        }
     }
     
     func getValue(from key: String) -> RemoteConfigValue {
